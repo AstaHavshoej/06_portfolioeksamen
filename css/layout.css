@@ -1,0 +1,62 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/*************** Menu ****************/
+
+/* FORSIDE */
+.container {
+  background-image: url(/billeder/baggrund.webp);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.container_tekst {
+  background-color: #11468c;
+  text-align: center;
+  color: #d9d2cc;
+  padding: 10px;
+}
+.divider {
+  text-align: center;
+  height: 1px; /* Højden på stregen */
+  margin: 10px 0; /* Luft omkring stregen */
+  background-color: #11468c;
+}
+
+/* CTA-knap  */
+.cta_t2 {
+  display: inline-block; /* Gør knappen til en blok med automatisk bredde */
+  padding: 10px 20px; /* Giver knappen indre afstand */
+  background-color: #11468c; /* Baggrundsfarve */
+  color: #ffffff; /* Tekstfarve */
+  text-decoration: none; /* Fjerner understregning */
+  border-radius: 5px; /* Afrundede hjørner */
+  font-size: 16px; /* Størrelsen på teksten */
+  font-weight: bold; /* Gør teksten fed */
+  text-align: center; /* Centrer teksten */
+}
+
+.button:hover {
+  background-color: #0d355d; /* Ændrer farven på baggrunden ved hover */
+  color: #e0e0e0; /* Ændrer tekstfarven ved hover */
+  transition: 0.3s; /* Tilføjer en glidende effekt */
+}
+
+@media (min-width: 800px) {
+  .container_oversigt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: lightgray;
+  }
+}

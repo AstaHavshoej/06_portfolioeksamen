@@ -6,31 +6,75 @@
     <title>Forside</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">FORSIDE</a></li>
+          <li><a href="om_mig.html">OM MIG</a></li>
+          <li><a href="t2.html">TEMA 2</a></li>
+          <li><a href="t3.html">TEMA 3</a></li>
+          <li><a href="t4.html">TEMA 4</a></li>
+          <li><a href="t5.html">TEMA 5</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
     <main>
-      <section class="container"></section>
-      <section class="container_tekst"></section>
+      <section class="container">
+        <h1>PORTFOLIO</h1>
+        <img src="billeder/profilbillede.webp" alt="dette er et billede af mig" />
+      </section>
+      <section class="container_tekst">
+        <h2 class="h2_forside">VELKOMMEN</h2>
+        <p>Velkommen til min verden som multimediedesigner. Gå på opdagelse i de projekter jeg har været igennem på mit første semester og følg med på en rejse med en med en masse læring.</p>
+      </section>
 
-      <div class="divider">
-        <p>her skal der stå noget - DIVIDER</p>
-      </div>
+      <div class="divider"></div>
 
       <section class="container_oversigt">
+        <div class="tema2">
+          <img src="billeder/t2.webp" alt="placeholder" />
+        </div>
+        <!-- <div>
+          <a href="https://www.ahcreative.dk/03_ux-ui/emnesite/index.html" class="cta_t2">CTA t3</a>
+        </div> -->
+
         <div class="tema">
-          <div></div>
+          <img src="billeder/t2.webp" alt="placeholder" />
+          <div>
+            <a href="https://www.ahcreative.dk/03_ux-ui/emnesite/index.html">CTA t3</a>
+          </div>
         </div>
 
         <div class="tema">
-          <div></div>
+          <img src="billeder/t2.webp" alt="placeholder" />
+          <div>
+            <a href="https://www.ahcreative.dk/kea/04_animation/website/index.html">CTA t4</a>
+          </div>
         </div>
 
         <div class="tema">
-          <div></div>
-        </div>
+          <img src="billeder/t2.webp" alt="placeholder" />
+          <div>
+            <a href="https://www.ahcreative.dk/kea/05_indhold/passionssite/">CTA t5 - passionssite</a>
+          </div>
 
-        <div class="tema">
-          <div></div>
+          <div>
+            <a href="https://www.ahcreative.dk/kea/05_indhold/virksomhedssite/">CTA t5 - virksomhedssite</a>
+          </div>
         </div>
       </section>
       <div class="divider">
@@ -38,5 +82,6 @@
       </div>
     </main>
     <footer>Her er min footer</footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>
