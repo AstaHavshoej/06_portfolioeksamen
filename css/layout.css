@@ -15,7 +15,7 @@ video {
 
 /* FORSIDE */
 .container {
-  background-image: url(/billeder/baggrund.webp);
+  background-image: url(/billeder/baggrund3.webp);
   display: grid;
   justify-items: center;
   align-items: center;
@@ -36,27 +36,102 @@ video {
 
 /* CTA-knap  */
 .cta_t2 {
-  display: inline-block; /* Gør knappen til en blok med automatisk bredde */
-  padding: 10px 20px; /* Giver knappen indre afstand */
-  background-color: #11468c; /* Baggrundsfarve */
+  /* display: inline-block;  */
+  background-color: #0d355d;
+  padding: 40px 50px; /* Giver knappen indre afstand */
+  border: solid 0.5px #0d355d;
   color: #ffffff; /* Tekstfarve */
   text-decoration: none; /* Fjerner understregning */
-  border-radius: 5px; /* Afrundede hjørner */
   font-size: 16px; /* Størrelsen på teksten */
-  font-weight: bold; /* Gør teksten fed */
   text-align: center; /* Centrer teksten */
 }
 
-.button:hover {
-  background-color: #0d355d; /* Ændrer farven på baggrunden ved hover */
-  color: #e0e0e0; /* Ændrer tekstfarven ved hover */
+.cta_t2:hover {
+  background-color: #e0e0e0; /* Ændrer farven på baggrunden ved hover */
+  color: #0d355d; /* Ændrer tekstfarven ved hover */
   transition: 0.3s; /* Tilføjer en glidende effekt */
 }
 
+/* DESKTOP */
 @media (min-width: 800px) {
   .container_oversigt {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: lightgray;
+  }
+
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  div.scroll-container {
+    background-color: #e0e0e0;
+    overflow-x: auto; /* Horisontal scroll aktiveret */
+    display: flex; /* Vis billederne i en horisontal række */
+    gap: 10px; /* Afstand mellem billeder */
+    padding: 10px;
+    max-width: 600px; /* Giver en begrænsning for containerens bredde */
+    margin: 0 auto; /* Center containeren på siden */
+  }
+  div.scroll-container img {
+    padding: 10px;
+  }
+
+  .grid_t2 {
+    display: flex;
+    align-items: flex-start; /* Sørg for, at alt flugter */
+    gap: 20px; /* Giver lidt afstand mellem elementerne */
+    background-color: #e0e0e0;
+  }
+  .tema_h2 {
+    writing-mode: sideways-rl; /* Gør teksten lodret (top til bund) */
+    font-size: 90px;
+  }
+  .tekst {
+    margin-top: 50px;
+    font-size: 20px;
+    /* margin-right: 80px; */
+    width: 70%;
+  }
+
+  .liste1 {
+    padding-left: 20px;
+  }
+
+  .grid_1-1 {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    border: #0d355d 2px;
+    background-color: #e0e0e0;
+  }
+}
+/* MOBILE SITE */
+@media (max-width: 800px) {
+  .grid_1-1 {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    border: #0d355d 2px;
+    background-color: #e0e0e0;
+    row-gap: 30px;
+  }
+  .cta_t2 {
+    /* display: inline-block;  */
+    background-color: #0d355d;
+    padding: 10px 10px; /* Giver knappen indre afstand */
+    border: solid 0.5px #0d355d;
+    color: #ffffff; /* Tekstfarve */
+    text-decoration: none; /* Fjerner understregning */
+    font-size: 15px; /* Størrelsen på teksten */
+    text-align: center; /* Centrer teksten */
+  }
+
+  .cta_t2:hover {
+    background-color: #e0e0e0; /* Ændrer farven på baggrunden ved hover */
+    color: #0d355d; /* Ændrer tekstfarven ved hover */
+    transition: 0.3s; /* Tilføjer en glidende effekt */
   }
 }
