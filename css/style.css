@@ -14,10 +14,9 @@ video {
 /*************** Menu ****************/
 
 /* GENEREL STYLING PÅ ALLE SIDER */
-body {
-  /* background-color: #d9d2cc; */
-  padding: 20px;
-}
+
+/* background-color: #d9d2cc; */
+/* padding: 20px; */
 
 h1 {
   text-align: center;
@@ -53,7 +52,8 @@ p {
 /* ryk evt. til layout.css */
 /* FORSIDE */
 .h2_forside {
-  color: #d9d2cc;
+  /* color: #d9d2cc; */
+  color: #333333;
   text-align: center;
 }
 

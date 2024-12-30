@@ -71,7 +71,12 @@ nav {
 }
 /* FOOTER */
 footer {
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
+  border-top: 1px solid#11468c;
+  text-align: center;
+  font-family: "Raleway", serif;
+  color: rgb(51, 49, 49);
+  font-weight: lighter;
 }
 /* BURGER-MENU */
 .burger {
@@ -136,19 +141,30 @@ footer {
   display: grid;
   justify-items: center;
   align-items: center;
+  border-bottom: solid 1px #11468c;
 }
 
 .container_tekst {
-  background-color: #11468c;
+  /* background-color: #11468c; */
+  /* background-color: #11468c; */
   text-align: center;
-  color: #d9d2cc;
-  padding: 10px;
+  /* color: #e0e0e0; */
+  color: #333333;
+  /* padding: 20px; */
+  padding-bottom: 2rem;
+  /* border-bottom: solid 2px #11468c; */
+  /* margin-bottom: 4rem; */
 }
 .divider {
   text-align: center;
   height: 1px; /* Højden på stregen */
   margin: 10px 0; /* Luft omkring stregen */
   background-color: #11468c;
+}
+hr {
+  width: 33.3%; /* Angiv den ønskede bredde */
+  margin: 0 auto; /* Centrerer linjen */
+  border: 1px solid #11468c; /* Hvis der ikke allerede er en border */
 }
 
 /* CTA-KNAPPER  */
@@ -205,12 +221,13 @@ footer {
     /* margin: 0;
     padding: 10px; */
     text-align: right;
+    color: #d9d2cc;
   }
   .om_grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* background-image: url(/billeder/baggrund3.webp); */
-    background-color: #e0e0e0;
+    background-color: #11468c;
     padding: 2rem;
     border: solid 1px rgb(51, 49, 49);
   }
@@ -219,6 +236,13 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /* background-color: lightgray; */
+    /* background-color: #11468c; */
+    padding: 2rem;
+    /* margin-top: 2rem; */
+    /* border-top: #11468c 2px solid; */
+  }
+  .img_oversigt {
+    border: 2px solid #11468c;
   }
   .indhold_om {
     display: grid;
@@ -304,7 +328,7 @@ footer {
 /* et forslag til farvevalg */
 .temabeskrivelse {
   display: flex;
-  background-color: #0d355d;
+  background-color: #11468c;
   color: #e0e0e0;
 }
 .tema_h2 {
@@ -318,17 +342,27 @@ footer {
   display: grid;
   place-items: center;
   text-decoration: none;
-  color: #e0e0e0;
-  background-color: #e0e0e0;
+  /* color: #e0e0e0; */
+  color: #333333;
+  /* background-color: #e0e0e0; */
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   /* padding: 10px;  */
   /* background-color: #fff;  */
-  transition: transform 0.2s, box-shadow 0.2s;
-  padding: 2px;
+  /* transition: transform 0.2s, box-shadow 0.2s; */
+  padding: 5px;
+  /* background-color: #0033cc;  */
+  transition: background-color 0.3s ease; /* Glidende farveændring */
+  /* border: solid 2px; */
 }
 .tema2:hover {
-  transform: translateY(-5px); /* Løft boksen ved hover */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Øg skyggen */
+  /* transform: translateY(-5px); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); */
+  background-color: #d3d1d1; /* Farve ved hover */
+  background-color: #11468cb9;
+
+  /* background-color: #0d355d;  */
+  color: #0d355d; /* Ændrer tekstfarven ved hover */
+  transition: 0.3s; /* Tilføjer en glidende effekt */
 }
 .tema2 > * {
   grid-column: 1;
