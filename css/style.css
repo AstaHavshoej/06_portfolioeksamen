@@ -1,0 +1,91 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/*************** Menu ****************/
+
+h1 {
+  text-align: center;
+  font-size: 150px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: lighter;
+  color: rgb(51, 49, 49);
+}
+
+h2 {
+  color: BLACK;
+  font-size: 28px;
+  font-family: "Raleway", serif;
+  font-weight: 300;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: "Raleway", serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+p {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5em;
+  /* margin-right: 1.5rem; */
+}
+
+main {
+  padding: 20px;
+}
+/* FORSIDE */
+.h2_forside {
+  /* color: #d9d2cc; */
+  color: #333333;
+  text-align: center;
+}
+.h2_om {
+  color: #e0e0e0;
+  font-size: 45px;
+}
+.h3_om {
+  font-size: 30px;
+  color: #333333;
+  text-align: center;
+}
+
+/* MOBILE SITE */
+@media (max-width: 800px) {
+  h1 {
+    text-align: center;
+    font-size: 45px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: lighter;
+    color: #333333;
+  }
+
+  .h1_forside {
+    font-size: 75px;
+  }
+  .h2_forside {
+    /* color: #d9d2cc; */
+    color: #e0e0e0;
+    text-align: center;
+  }
+  h3 {
+    font-family: "Raleway", serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
