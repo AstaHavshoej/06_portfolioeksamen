@@ -13,11 +13,6 @@ video {
 }
 /*************** Menu ****************/
 
-/* GENEREL STYLING PÅ ALLE SIDER */
-
-/* background-color: #d9d2cc; */
-/* padding: 20px; */
-
 h1 {
   text-align: center;
   font-size: 150px;
@@ -37,9 +32,10 @@ h2 {
 
 h3 {
   font-family: "Raleway", serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
   padding-bottom: 10px;
+  padding-top: 20px;
 }
 
 p {
@@ -49,10 +45,22 @@ p {
   line-height: 1.5em;
   /* margin-right: 1.5rem; */
 }
-/* ryk evt. til layout.css */
+
+main {
+  padding: 20px;
+}
 /* FORSIDE */
 .h2_forside {
   /* color: #d9d2cc; */
+  color: #333333;
+  text-align: center;
+}
+.h2_om {
+  color: #e0e0e0;
+  font-size: 45px;
+}
+.h3_om {
+  font-size: 30px;
   color: #333333;
   text-align: center;
 }
@@ -64,20 +72,20 @@ p {
     font-size: 45px;
     font-family: "Cormorant Garamond", serif;
     font-weight: lighter;
-    color: #103b73;
+    color: #333333;
   }
 
   .h1_forside {
     font-size: 75px;
   }
-
+  .h2_forside {
+    /* color: #d9d2cc; */
+    color: #e0e0e0;
+    text-align: center;
+  }
   h3 {
     font-family: "Raleway", serif;
     font-weight: 400;
     font-size: 20px;
-  }
-
-  img {
-    padding: 5px;
   }
 }

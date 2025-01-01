@@ -52,18 +52,11 @@ nav {
 
 .menu a {
   display: block;
-  /* padding: 20px;
-  margin-right: 15px;
-  margin-left: 15px; */
   color: #103b73;
   font-weight: lighter;
   text-decoration: none;
   transition: color 0.3s;
-  /* text-align: end; */
-  /* background-color: #d9d2cc; */
   font-family: "Raleway", serif;
-
-  /* border: 2px solid #11468c; */
 }
 
 .menu a:hover {
@@ -135,7 +128,115 @@ footer {
     font-size: 24px;
   }
 }
-/* FORSIDE */
+
+/* MOBILE SITE */
+@media (max-width: 800px) {
+  .container_tekst {
+    text-align: center;
+    color: #e0e0e0;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+    background-color: #11468c;
+  }
+  .grid_1-1 {
+    /* padding: 15px; */
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    border: #0d355d 2px;
+  }
+
+  .border_cta {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-decoration: none;
+    text-align: center;
+  }
+  /* TEMA 4 */
+  .spil_prototype {
+    text-align: center;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 800px) {
+  /* FORSIDE */
+  .container_tekst {
+    text-align: center;
+    color: #333333;
+    padding-bottom: 2rem;
+  }
+
+  .container_oversigt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 2rem;
+  }
+  .img_oversigt {
+    border: 2px solid #11468c;
+  }
+
+  hr {
+    width: 33.3%; /* Angiv den ønskede bredde */
+    margin: 0 auto; /* Centrerer linjen */
+    border: 1px solid #11468c; /* Hvis der ikke allerede er en border */
+  }
+
+  /* OM MIG */
+  .vertical-divider {
+    width: 1px; /* Tykkelsen på stregen */
+    height: 100%; /* Højden på stregen (kan justeres efter behov) */
+    background-color: #e0e0e0; /* Farven på stregen */
+    margin-left: 4em;
+    border-style: inherit;
+  }
+
+  .om_1 {
+    display: flex;
+    align-items: flex-start; /* Sørg for, at alt flugter */
+    gap: 20px; /* Giver lidt afstand mellem elementerne */
+  }
+
+  .tekst_om {
+    writing-mode: vertical-rl; /* Gør teksten lodret (top til bund) */
+    font-size: 140px;
+    text-align: right;
+    color: #d9d2cc;
+  }
+  .om_grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #11468c;
+    padding: 2rem;
+    border: solid 1px rgb(51, 49, 49);
+  }
+  .indhold_om {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* TEMA 2 */
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+  /* TEMA 4 */
+  .passion_video {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: #11468c; */
+    margin-bottom: 1.5rem;
+    place-items: center;
+    color: #333333;
+  }
+
+  .spil_prototype {
+    text-align: center;
+    margin-right: 10rem;
+  }
+}
+
+/* FØLGENDE GÆLDER BÅDE FOR DESKTOP OG MOBIL LIGEYGLDIG SKÆRMSTØRRELSE */
 .container {
   background-image: url(/billeder/baggrund3.webp);
   display: grid;
@@ -143,189 +244,6 @@ footer {
   align-items: center;
   border-bottom: solid 1px #11468c;
 }
-
-.container_tekst {
-  /* background-color: #11468c; */
-  /* background-color: #11468c; */
-  text-align: center;
-  /* color: #e0e0e0; */
-  color: #333333;
-  /* padding: 20px; */
-  padding-bottom: 2rem;
-  /* border-bottom: solid 2px #11468c; */
-  /* margin-bottom: 4rem; */
-}
-.divider {
-  text-align: center;
-  height: 1px; /* Højden på stregen */
-  margin: 10px 0; /* Luft omkring stregen */
-  background-color: #11468c;
-}
-hr {
-  width: 33.3%; /* Angiv den ønskede bredde */
-  margin: 0 auto; /* Centrerer linjen */
-  border: 1px solid #11468c; /* Hvis der ikke allerede er en border */
-}
-
-/* CTA-KNAPPER  */
-.cta_t2 {
-  /* display: inline-block;  */
-  background-color: #0d355d;
-  padding: 30px 30px; /* Giver knappen indre afstand */
-  border: solid 0.5px #0d355d;
-  color: #ffffff; /* Tekstfarve */
-  text-decoration: none; /* Fjerner understregning */
-  font-size: 16px; /* Størrelsen på teksten */
-  text-align: center; /* Centrer teksten */
-}
-.cta_t2:hover {
-  background-color: #e0e0e0; /* Ændrer farven på baggrunden ved hover */
-  color: #0d355d; /* Ændrer tekstfarven ved hover */
-  transition: 0.3s; /* Tilføjer en glidende effekt */
-}
-
-.cta_passion {
-  background-color: #e0e0e0;
-  padding: 30px 30px; /* Giver knappen indre afstand */
-  border: solid 0.5px #0d355d;
-  color: #0d355d; /* Tekstfarve */
-  text-decoration: none; /* Fjerner understregning */
-  font-size: 16px; /* Størrelsen på teksten */
-  text-align: center; /* Centrer teksten */
-}
-.cta_passion:hover {
-  background-color: #0d355d; /* Ændrer farven på baggrunden ved hover */
-  color: #e0e0e0; /* Ændrer tekstfarven ved hover */
-  transition: 0.3s; /* Tilføjer en glidende effekt */
-}
-/* Passionssite cta knap */
-.border_cta {
-  margin-bottom: 5rem;
-  text-decoration: none;
-  text-align: center;
-}
-
-/* DESKTOP */
-@media (min-width: 800px) {
-  /* kan jeg blande flez og grid? */
-  .om_1 {
-    display: flex;
-    align-items: flex-start; /* Sørg for, at alt flugter */
-    gap: 20px; /* Giver lidt afstand mellem elementerne */
-  }
-  .tekst_om {
-    padding-top: 3rem;
-    writing-mode: vertical-rl; /* Gør teksten lodret (top til bund) */
-    /* transform: rotate(180deg);  */
-    font-size: 145px;
-    /* margin: 0;
-    padding: 10px; */
-    text-align: right;
-    color: #d9d2cc;
-  }
-  .om_grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* background-image: url(/billeder/baggrund3.webp); */
-    background-color: #11468c;
-    padding: 2rem;
-    border: solid 1px rgb(51, 49, 49);
-  }
-
-  .container_oversigt {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* background-color: lightgray; */
-    /* background-color: #11468c; */
-    padding: 2rem;
-    /* margin-top: 2rem; */
-    /* border-top: #11468c 2px solid; */
-  }
-  .img_oversigt {
-    border: 2px solid #11468c;
-  }
-  .indhold_om {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    /* background-color: #e0e0e0; */
-    border-top: solid 1px rgb(51, 49, 49);
-  }
-  .divider_om {
-    padding: 20px;
-    text-align: center;
-    font-family: "Raleway", serif;
-    color: rgb(51, 49, 49);
-    font-weight: lighter;
-  }
-  .grid_1-1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  /* BILLEDEGALLERI - TEMA3 */
-  div.scroll-container {
-    background-color: #e0e0e0;
-    overflow-x: auto; /* Horisontal scroll aktiveret */
-    display: flex; /* Vis billederne i en horisontal række */
-    gap: 10px; /* Afstand mellem billeder */
-    padding: 10px;
-    max-width: 600px; /* Giver en begrænsning for containerens bredde */
-    margin: 0 auto; /* Center containeren på siden */
-  }
-  div.scroll-container img {
-    padding: 10px;
-  }
-
-  .tema_h2 {
-    writing-mode: sideways-rl; /* Gør teksten lodret (top til bund) */
-    font-size: 90px;
-    padding: 10px;
-  }
-  .tekst {
-    font-size: 20px;
-    padding: 20px;
-  }
-
-  /* hvorfor bruge rem som enhed? */
-  .passion_video {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #0d355d;
-    margin-bottom: 1.5rem;
-    place-items: center;
-  }
-  .video {
-    padding-top: 3rem;
-    padding-right: 3rem;
-  }
-
-  .passion_tekst {
-    color: #e0e0e0;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    line-height: 2rem;
-  }
-  /* LISTE */
-  .liste1 {
-    padding-left: 20px;
-    font-family: "Lato", serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 1.5em;
-  }
-  /* kan jeg slå disse to sammen måske? */
-  .grid_1-1 {
-    padding: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-  }
-  .grid_1-1-t2 {
-    /* background-color: #0d355d; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-/* et forslag til farvevalg */
 .temabeskrivelse {
   display: flex;
   background-color: #11468c;
@@ -337,95 +255,87 @@ hr {
   color: #e0e0e0;
   text-align: center;
 }
-
 .tema2 {
   display: grid;
   place-items: center;
   text-decoration: none;
-  /* color: #e0e0e0; */
   color: #333333;
-  /* background-color: #e0e0e0; */
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-  /* padding: 10px;  */
-  /* background-color: #fff;  */
-  /* transition: transform 0.2s, box-shadow 0.2s; */
   padding: 5px;
-  /* background-color: #0033cc;  */
-  transition: background-color 0.3s ease; /* Glidende farveændring */
-  /* border: solid 2px; */
+  transition: background-color 0.3s ease;
 }
 .tema2:hover {
-  /* transform: translateY(-5px); 
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); */
-  background-color: #d3d1d1; /* Farve ved hover */
   background-color: #11468cb9;
-
-  /* background-color: #0d355d;  */
-  color: #0d355d; /* Ændrer tekstfarven ved hover */
-  transition: 0.3s; /* Tilføjer en glidende effekt */
+  color: #0d355d;
+  transition: 0.3s;
 }
 .tema2 > * {
   grid-column: 1;
   grid-row: 1;
   text-align: center;
 }
+.divider_om {
+  padding: 20px;
+  text-align: center;
+  font-family: "Raleway", serif;
+  color: rgb(51, 49, 49);
+  font-weight: lighter;
+}
+.kompetencer {
+  background-color: #e0e0e0;
+}
+.tekst {
+  font-size: 20px;
+  padding: 20px;
+}
+#myImage {
+  cursor: pointer; /* Vis håndcursor for at indikere, at billedet kan klikkes */
+}
+div.scroll-container {
+  background-color: #e0e0e0;
+  overflow-x: auto; /* Horisontal scroll aktiveret */
+  display: flex; /* Vis billederne i en horisontal række */
+  gap: 10px; /* Afstand mellem billeder */
+  padding: 10px;
+  max-width: 600px; /* Giver en begrænsning for containerens bredde */
+  margin: 0 auto; /* Center containeren på siden */
+}
+div.scroll-container img {
+  padding: 10px;
+}
 
-/* MOBILE SITE */
+.liste_om {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 2rem;
+}
+/* CTA-KNAPPER  */
+.CTA {
+  /* display: inline-block;  */
+  background-color: #e0e0e0;
+  border: solid 0.5px #11468c;
+  padding: 20px 20px; /* Giver knappen indre afstand */
+  color: #11468c; /* Tekstfarve */
+  text-decoration: none; /* Fjerner understregning */
+  font-size: 16px; /* Størrelsen på teksten */
+  text-align: center;
+  margin-top: 10px;
+  display: inline-block;
+}
+.CTA:hover {
+  background-color: #11468c; /* Ændrer farven på baggrunden ved hover */
+  color: #e0e0e0; /* Ændrer tekstfarven ved hover */
+  transition: 0.3s; /* Tilføjer en glidende effekt */
+}
 
-@media (max-width: 800px) {
-  .grid_1-1 {
-    padding: 15px;
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    border: #0d355d 2px;
-    background-color: #e0e0e0;
-    row-gap: 30px;
-  }
-
-  /* CTA-KNAPPER - GIV EVT. KNAPPER SAMME NAVN*/
-
-  .cta_t2 {
-    /* display: inline-block;  */
-    background-color: #0d355d;
-    padding: 10px 10px; /* Giver knappen indre afstand */
-    border: solid 0.5px #0d355d;
-    color: #ffffff; /* Tekstfarve */
-    text-decoration: none; /* Fjerner understregning */
-    font-size: 15px; /* Størrelsen på teksten */
-    text-align: center; /* Centrer teksten */
-  }
-  .cta_t2:hover {
-    background-color: #e0e0e0; /* Ændrer farven på baggrunden ved hover */
-    color: #0d355d; /* Ændrer tekstfarven ved hover */
-    transition: 0.3s; /* Tilføjer en glidende effekt */
-  }
-
-  .cta_passion {
-    background-color: #0d355d;
-    padding: 10px 10px; /* Giver knappen indre afstand */
-    border: solid 0.5px #0d355d;
-    color: white; /* Tekstfarve */
-    text-decoration: none; /* Fjerner understregning */
-    font-size: 15px; /* Størrelsen på teksten */
-    text-align: center; /* Centrer teksten */
-  }
-  .cta_passion:hover {
-    background-color: #e0e0e0; /* Ændrer farven på baggrunden ved hover */
-    color: #0d355d; /* Ændrer tekstfarven ved hover */
-    transition: 0.3s; /* Tilføjer en glidende effekt */
-  }
-  .border_cta {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    text-decoration: none;
-    text-align: center;
-  }
-  .liste1 {
-    padding-left: 20px;
-    font-family: "Lato", serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 1.5em;
-  }
+.border_cta {
+  text-decoration: none;
+  text-align: center;
+}
+/* TEKST DIVIDER  */
+.divider {
+  text-align: center;
+  height: 1px; /* Højden på stregen */
+  margin: 10px 0; /* Luft omkring stregen */
+  background-color: #11468c;
 }
