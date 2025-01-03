@@ -6,6 +6,8 @@
     <title>Tema 5</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/layout.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet" />
@@ -29,6 +31,11 @@
           <div class="line"></div>
           <div class="line"></div>
           <div class="line"></div>
+        </div>
+        <div class="logo">
+          <a href="/">
+            <img src="billeder/logo.svg" alt="logo" />
+          </a>
         </div>
       </nav>
     </header>
@@ -54,45 +61,101 @@
         <p>Tema 5 var opdelt i to forskellige projekter:</p>
         <br />
         <ul style="list-style-type: none" class="liste_om">
-          <li>Passionsvideo: Udarbejdelse af en 60-sekunders video om en person med en passion. Denne video blev integreret på et website</li>
+          <li>Passionsvideo: Udarbejdelse af en 60-sekunders video om en person med en passion. Denne video skulle implementeres på et et passionssite vi selv skulle designe og kode</li>
           <li>Redesign af hjemmeside: En gruppeopgave, hvor vi redesignede en eksisterende hjemmeside (Eisen Carwash). Fokus var at optimere hjemmesiden på baggrund af bl.a. analyser og brugertests. Denne opgave lavede vi i grupper, hvor vi via GitHub kunnne kode i den samme fil</li>
         </ul>
 
         <br />
         <h3>PASSIONSVIDEO - THEAS AKVARELVERDEN</h3>
+        <hr / class="hr_t5">
+
         <!-- måske ændre denne div til en section? -->
         <div class="container_passion">
           <div class="passion_video">
             <p class="passion_tekst">
-              Vi arbejdede i par og producerede en 60-sekunders video inspireret af ”One Minute Wonder”-formatet. Jeg interviewede Thea, en kvinde med passion for akvarelmaling. Vi optog materialet sammen, men redigerede vores videoer individuelt.Vi skulle embedde den færdige video på vores Passionssite. <br />
-              Se den færdige video til højre
+              Vi arbejdede i par og producerede en 60-sekunders video inspireret af ”One Minute Wonder”-formatet. Jeg interviewede Thea, en kvinde med passion for akvarelmaling. Min makker og jeg optog materialet sammen, men redigerede vores videoer individuelt. Vi skulle implementere den færdige video på vores Passionssite på to forskellige måder: via video-tagget i HTML og via YouTubes embed-metode, hvor videon lægges op på YouTube. Begge implementeringsmetoder gjorde det muligt at se videon dirrekte inde på sitet.
+              <br />
+              Se min færdige passions-video til højre som er implementeret via HTML video-tagget.
             </p>
             <video controls src="film.mp4" poster="thumbnail.webp" class="video">Video med HTML</video>
-            <div class="border_cta">
-              <a href="https://www.ahcreative.dk/kea/05_indhold/passionssite/" class="CTA">PASSIONSSITE</a>
-            </div>
+            <div></div>
           </div>
         </div>
 
-        <h3>REDESIGN AF "EISEN CARWASH"</h3>
         <div class="container_passion">
-          <div class="passion_video">
-            <p>
-              Vores gruppe valgte at redesigne ”Eisen Carwash”, hvis virksomhed udbyder rengøring af biler, både indvendigt og udvendigt. Vi brugte Figma til ideudvikling, herunder udformingen af Style Tiles, wireframes og prototyper. GitHub blev essentielt i forhold til kodningen, da dette gjorde det muligt for os at arbejde i det samme projekt. For at holde overblik over vores arbejdsproces og deadlines over delopgaver, lavede vi et Trello board.Som aflsutning på dette tema, var vi gruppevis oppe og præsentere vores redesignede hjemmeside, hvor vi fremlagde udfra præsentationsteknikken Pecha Cucha. Brugertests såsom Likert-skala, 5-sekunders test og Lighthouse-test blev en essentiel del af arbejdsprocessen. Disse tests gav os et solidt grundlag og udgangspunkt for ændringer – både i
-              forhold til indhold og design.
-            </p>
-            <!-- indsæt henvisning til figma dokument -->
+          <h3>REDESIGN AF "EISEN CARWASH"</h3>
+          <hr / class="hr_t5">
 
+          <div class="redesign">
+            <p>Vores gruppe valgte at redesigne ”Eisen Carwash”, hvis virksomhed udbyder rengøring af biler, både indvendigt og udvendigt. Vi brugte Figma til ideudvikling, herunder udformingen af moodboards, Style Tiles, wireframes og prototyper.Brugertests såsom Likert-skala, 5-sekunders test og Lighthouse-test blev en essentiel del af arbejdsprocessen. Disse tests gav os et solidt grundlag og udgangspunkt for ændringer – både i forhold til indhold og design.</p>
             <div class="border_cta">
-              <a href="https://www.ahcreative.dk/kea/05_indhold/virksomhedssite/" class="CTA">VIRKSOMHEDSSITE</a>
+              <a href="
+              <div class="border_cta">
+                <a href="https://www.figma.com/design/U03KfZYyHUT9kTcDltxBBk/Virksomhedssite?node-id=0-1&p=f&t=Jerpw3sjfG6exr1l-0" class="CTA_t5">PROCES I FIGMA</a>
+              </div>
+              <br />
+              <p>GitHub blev essentielt i forhold til kodningen, da dette gjorde det muligt for os at kode i det samme projekt. Vi delte siderne, der skulle indgå på siden, ud mellen os - jeg fik ansvaret for at kode gallerisiden. Dette gav mig yderligere træning og færdigheder i billedebehandling og at få billeder til at fungere i et galleri, både til mobil og desktop. Jeg konverterede bl.a. billederne til WepP format, da dette gav bedre resultater i Light House Testen. Jeg brugte display: grid, for at placere billederne korrekt i forhold til hinanden. Derudover anvendte jeg media Queries for at gøre galleriet responsivt. Nedenfor ses gallerisiden på deres oprindelige hjemmeside, galleriet på vores redesignede hjemmeside og et udsnit af hvordan jeg lavede koden</p>
+              <br />
+              <div class="grid_1-1-1">
+                <div>
+                  <!-- <h3>Galleri for oprindelig hjemmeside</h3> -->
+                  <img src="billeder/galleri2-t5.webp" />
+                </div>
+                <div>
+                  <!-- <h3>Galleri for redesignede hjemmeside</h3> -->
+                  <img src="billeder/galleri-t5.webp" />
+                </div>
+                <div>
+                  <!-- <h3>udsnit af kode for redesign</h3> -->
+                  <img src="billeder/kode-t5.webp" />
+                </div>
+              </div>
+              <p><br />Som aflsutning på dette tema, var vi gruppevis oppe og præsentere vores redesignede hjemmeside, hvor vi fremlagde udfra præsentationsteknikken Pecha Cucha. Denne præsentationsform inkluderer 20 slides, der hver vises i præcis 20 sekunder (6 minutter og 40 sekunder i alt). <br /></p>
             </div>
           </div>
         </div>
+        <!-- <div class="divider"></div> -->
+
+        <h3>ANIMERET VEKTORGRAFIK - LOTTIE FILES</h3>
+        <hr / class="hr_t5">
+        <p>I arbejdet med både mit passionssite og virksomhedssite blev jeg introduceret til animeret vektorgrafik i form af Lottie Files. Lottie Files er en teknologi, der gør det muligt at integrere komplekse animationer på websites og apps Jeg designede og udviklede mine Lottie-animationer i Adobe After Effects og eksporterede animationerne i Lottie-format.Lottie-animationer er ideelle til webdesign, fordi de bevarer høj kvalitet uden at påvirke performance væsentligt. På mit site brugte jeg animationerne til at skabe en mere engagerende brugeroplevelse.</p>
       </section>
       <section>
-        <h2>LÆRING</h2>
+        <h2>LØSNING OG LÆRING</h2>
+        <div class="divider"></div>
+
         <div class="grid_1-1">
-          <p>Tema 5 gav mig både tekniske færdigheder og en forståelse for: - Hvordan man skaber engagerende og målrettet videoindhold - Optimering af brugeroplevelser gennem brugertests og iterative processer. - Teamsamarbejde og kommunikation i en kodningskontekst vha. værktøjer som Figma, GitHub og Trello .- Skabe bæredygtig grafik så som Lottie Files - Efter fremvisning af min passionsvideo blev jeg opmærksom på, hvordan jumpcutes påvirker seeroplevelsen</p>
+          <div>
+            <!-- <h3>HVAD TAGER JEG MED MIG?</h3> -->
+
+            <p>Tema 5 gav mig både tekniske færdigheder og en forståelse for:</p>
+            <ul style="list-style-type: none" class="liste_om">
+              <li><i class="fa-regular fa-lightbulb"></i>Hvordan man skaber engagerende og målrettet videoindhold</li>
+
+              <li><i class="fa-regular fa-lightbulb"></i> Optimering af brugeroplevelser gennem brugertests og iterative processer.</li>
+              <li><i class="fa-regular fa-lightbulb"></i> Skabe bæredygtig vektorgrafik i form af Lottie Files ved brug af After Effects samt at implementere dem på et website</li>
+              <li><i class="fa-regular fa-lightbulb"></i> Træning i præsentationsteknik i form af Pecha Kucha. Den stramme tidsramme tvang os til at være præcis og vælge det vigtigste indhold, hvilket trænede vores evne til at prioritere og strukturere vores budskaber.</li>
+              <li><i class="fa-regular fa-lightbulb"></i> Teamsamarbejde og kommunikation i en kodningskontekst vha. værktøjer som Figma, GitHub og Trello</li>
+            </ul>
+          </div>
+
+          <div class="løsning_t5">
+            <h3>LØSNING</h3>
+            <div class="grid_1-1">
+              <div>
+                <!-- <div class="border_cta"> -->
+                <a href="https://www.ahcreative.dk/kea/05_indhold/passionssite/" class="CTA_t5">PASSIONSSITE</a>
+                <!-- </div> -->
+              </div>
+              <div>
+                <!-- <div class="border_cta"> -->
+                <a href="https://www.ahcreative.dk/kea/05_indhold/virksomhedssite/" class="CTA_t5">VIRKSOMHEDSSITE</a>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+
+          <div></div>
         </div>
       </section>
     </main>

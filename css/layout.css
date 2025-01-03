@@ -152,6 +152,19 @@ footer {
     text-decoration: none;
     text-align: center;
   }
+  .grid_1-1_t2 {
+    display: grid;
+    background-color: #11468c;
+    padding: 1.5rem;
+  }
+  .tekst_t2 {
+    font-size: 18px;
+    /* margin-top: 2rem; */
+    /* margin-right: 5rem; */
+    margin-bottom: 1rem;
+    color: #e0e0e0;
+    text-align: justify;
+  }
   /* TEMA 4 */
   .spil_prototype {
     text-align: center;
@@ -180,6 +193,21 @@ footer {
     width: 33.3%; /* Angiv den ønskede bredde */
     margin: 0 auto; /* Centrerer linjen */
     border: 1px solid #11468c; /* Hvis der ikke allerede er en border */
+    margin-bottom: 1rem;
+  }
+
+  .hr_t3 {
+    margin: 0; /* Centrerer linjen */
+    border: 1px solid #11468c; /* Hvis der ikke allerede er en border */
+    width: 20%;
+    margin-bottom: 10px;
+  }
+
+  .hr_t5 {
+    margin: 0; /* Centrerer linjen */
+    border: 1px solid #11468c; /* Hvis der ikke allerede er en border */
+    width: 30%;
+    margin-bottom: 10px;
   }
 
   /* OM MIG */
@@ -201,33 +229,66 @@ footer {
     writing-mode: vertical-rl; /* Gør teksten lodret (top til bund) */
     font-size: 140px;
     text-align: right;
-    color: #d9d2cc;
+    color: #e0e0e0;
   }
   .om_grid_1-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr;
     background-color: #11468c;
     padding: 2rem;
     border: solid 1px rgb(51, 49, 49);
   }
-  .indhold_om {
+  .container_om {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 2fr;
   }
+  /* .indhold_om {
+    display: grid;
+    grid-template-columns: 1fr 
+  } */
   /* TEMA 2 */
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
   }
+  .grid_1-1_t2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #11468c;
+    padding: 1rem;
+  }
+  .tekst_t2 {
+    font-size: 18px;
+    margin-right: 5rem;
+    color: #e0e0e0;
+    text-align: justify;
+    place-self: center;
+  }
+  .container_scroll {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #e0e0e0;
+  }
+  .tekst_t3 {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    /* text-align: justify; */
+  }
   /* TEMA 4 */
+
   .passion_video {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* background-color: #11468c; */
-    margin-bottom: 1.5rem;
+    background-color: #e0e0e0;
+    /* margin-bottom: 1.5rem; */
     place-items: center;
     color: #333333;
+    padding: 2rem;
+  }
+  .passion_tekst {
+    margin-right: 1.5rem;
   }
 
   .spil_prototype {
@@ -280,8 +341,15 @@ footer {
   color: rgb(51, 49, 49);
   font-weight: lighter;
 }
-.kompetencer {
-  background-color: #e0e0e0;
+.tekst_kompetencer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.mig_om {
+  /* background-color: #e0e0e0; */
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .tekst {
   font-size: 20px;
@@ -290,14 +358,30 @@ footer {
 #myImage {
   cursor: pointer; /* Vis håndcursor for at indikere, at billedet kan klikkes */
 }
+
 div.scroll-container {
   background-color: #e0e0e0;
   overflow-x: auto; /* Horisontal scroll aktiveret */
   display: flex; /* Vis billederne i en horisontal række */
   gap: 10px; /* Afstand mellem billeder */
   padding: 10px;
-  max-width: 600px; /* Giver en begrænsning for containerens bredde */
-  margin: 0 auto; /* Center containeren på siden */
+  margin-top: 2rem;
+}
+div.scroll-container img {
+  padding: 10px;
+}
+
+.img_kode_t2 {
+  border: #11468c solid 1px;
+  /* margin-left: 3rem; */
+}
+div.scroll-container-t3 {
+  /* background-color: #e0e0e0; */
+  overflow-x: auto; /* Horisontal scroll aktiveret */
+  display: flex; /* Vis billederne i en horisontal række */
+  gap: 10px; /* Afstand mellem billeder */
+  padding: 10px;
+  /* margin-top: 2rem; */
 }
 div.scroll-container img {
   padding: 10px;
@@ -308,6 +392,18 @@ div.scroll-container img {
   font-weight: 300;
   font-size: 18px;
   line-height: 2rem;
+  padding-left: 2rem;
+}
+.grid_1-1-1 {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #11468c;
+}
+.løsning_t5 {
+  text-align: center;
+}
+.video {
+  padding-top: 2rem;
 }
 /* CTA-KNAPPER  */
 .CTA {
@@ -322,6 +418,22 @@ div.scroll-container img {
   margin-top: 10px;
   display: inline-block;
 }
+.CTA_t5 {
+  background-color: #11468c;
+  border: solid 0.5px #11468c;
+  padding: 20px 20px; /* Giver knappen indre afstand */
+  color: #e0e0e0; /* Tekstfarve */
+  text-decoration: none; /* Fjerner understregning */
+  font-size: 16px; /* Størrelsen på teksten */
+  text-align: center;
+  margin-top: 10px;
+  display: inline-block;
+}
+.CTA_t5:hover {
+  background-color: #e0e0e0; /* Ændrer farven på baggrunden ved hover */
+  color: #11468c; /* Ændrer tekstfarven ved hover */
+  transition: 0.3s; /* Tilføjer en glidende effekt */
+}
 .CTA:hover {
   background-color: #11468c; /* Ændrer farven på baggrunden ved hover */
   color: #e0e0e0; /* Ændrer tekstfarven ved hover */
@@ -332,6 +444,7 @@ div.scroll-container img {
   text-decoration: none;
   text-align: center;
 }
+
 /* TEKST DIVIDER  */
 .divider {
   text-align: center;

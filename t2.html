@@ -6,6 +6,8 @@
     <title>Tema 2</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/layout.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet" />
@@ -16,6 +18,11 @@
   </head>
   <body>
     <header>
+      <div class="logo">
+        <a href="/">
+          <img src="billeder/logo.svg" alt="logo" />
+        </a>
+      </div>
       <nav>
         <ul class="menu">
           <li><a href="index.html">FORSIDE</a></li>
@@ -42,12 +49,29 @@
       <section>
         <h2>PROCES</h2>
         <div class="divider"></div>
-
         <div class="grid_1-1">
-          <p>Vi skulle udarbejde et website til både desktop og mobil med udleveret materiale fra underviserne. En vigtig del af processen var at forstå, hvordan wireframes fungerer som en visuel skabelon for HTML-strukturen. Ved at bruge de udleverede wireframes og layoutdiagrammer kunne jeg tydeligere se sammenhængen mellem design og kode. Layoutdiagrammerne hjalp mig med at forstå strukturen og hierarkiet på websitet, hvilket gjorde det lettere at organisere og navigere i HTML-opbygningen. Wireframes gav mig klarhed over, hvor de enkelte elementer skulle placeres i layoutet, og sikrede, at jeg kunne følge en struktureret tilgang til designet. I billedegalleriet til højre ses den udleverede wireframe samt layoutdiagrammet for forsiden af websitet.</p>
+          <div>
+            <h3>FRA WIREFRAME TIL KODE</h3>
+            <p>
+              Vi skulle udarbejde et website til både desktop og mobil med udleveret materiale fra underviserne. En vigtig del af processen var at forstå, hvordan wireframes fungerer som en visuel skabelon for HTML-strukturen. Ved at bruge de udleverede wireframes og layoutdiagrammer kunne jeg tydeligere se sammenhængen mellem design og kode. Layoutdiagrammerne hjalp mig med at forstå strukturen og hierarkiet på websitet, hvilket gjorde det lettere at organisere og navigere i HTML-opbygningen. Wireframes gav mig klarhed over, hvor de enkelte elementer skulle placeres i layoutet, og sikrede, at jeg kunne følge en struktureret tilgang til designet. <br />
+              I billedegalleriet til højre ses den udleverede wireframe, layoutdiagram samt et udsnit af kode for forsiden af websitet.
+            </p>
+          </div>
           <div class="scroll-container">
             <img src="billeder/wireframe.webp" alt="wireframe" />
             <img src="billeder/layout.webp" alt="layoutdiagram" />
+            <img src="billeder/kode_t2.webp" alt="kode" />
+          </div>
+        </div>
+        <div>
+          <h3>BILLEDEBEHANDLING</h3>
+          <p>En vigtig del af udformningen af studiestartsprøve var processen med billedbehandling. Vi lærte om vigtigheden af pixels og deres betydning for billedkvalitet og filstørrelse. For at optimere billederne anvendte vi Squoosh til komprimering, hvilket reducerede filstørrelsen markant uden at gå på kompromis med kvaliteten. Derudover konverterede vi billederne til WebP-format, som er ideelt til webbrug, da det kombinerer høj kvalitet med små filstørrelser. Denne tilgang sikrede, at billederne både blev visuelt skarpe og hurtigere at indlæse på websitet</p>
+        </div>
+        <div>
+          <h3>FRA MOBILE SITE TIL DESKTOP</h3>
+          <div class="grid_1-1_t2">
+            <p class="tekst_t2">For at få siden til at fungere optimalt både på mobil og desktop, lærte jeg at arbejde med breakpoints i CSS og blev her introduceret til media queries, som jeg anvendte for at gøre mit site responsivt. Jeg definerede specifikke breakpoints for at sikre, at elementer som navigation, tekst, og billeder tilpassede sig til forskellige skærmstørrelser. For eksempel brugte jeg en media query med reglen (min-width: 850px) for at optimere designet til skærme, der er bredere end 850px. Ved at kombinere disse teknikker med optimeret billedbehandling lykkedes det mig at skabe en side, der både fungerer gnidningsfrit og så godt ud på små og store skærme.</p>
+            <img src="billeder/kode_2.webp" alt="udsnit af min kode" class="img_kode_t2" />
           </div>
         </div>
       </section>
@@ -56,10 +80,15 @@
         <div>
           <h2>LØSNING OG LÆRING</h2>
           <div class="divider"></div>
-          <p>
-            <i class="fa-regular fa-lightbulb fa-sm"></i> Dette tema gav mig en grundforståelse af billedbehandling og de forskellige billedformater, som har været afgørende for mit videre arbejde. Undervejs stødte jeg på udfordringer, især med at sætte billederne op i mit galleri og med at oversætte layoutdiagrammet til HTML-kode. Disse opgaver virkede komplekse til at begynde med, men i de efterfølgende temaer begyndte de gradvist at give mening. Det var særligt lærerigt at opleve, hvordan systematik og orden kan gøre en stor forskel i arbejdet. For eksempel indså jeg, hvor vigtigt det er at navngive filer logisk - noget jeg ikke havde gjort fra starten. Den ulogiske navngivning gjorde det vanskeligere at arbejde med billedgalleriet, men det blev en værdifuld lektie i at planlægge og
-            organisere mit materiale bedre. Trods udfordringerne har dette tema givet mig et stærkt fundament at bygge videre på. Selvom alt ikke gav mening med det samme, har det hjulpet mig til at forstå de grundlæggende principper, jeg skal bruge i fremtidige projekter. Denne erfaring har været essentiel for at styrke både min tekniske viden og min evne til at arbejde systematisk.
-          </p>
+          <p>Dette tema har givet mig et stærkt fundament at bygge videre på. Undervejs stødte jeg på udfordringer især med at sætte billederne op i mit galleri og med at oversætte layoutdiagrammet til HTML-kode. Denne erfaring har været essentiel for at styrke både min tekniske viden og min evne til at arbejde systematisk. Selvom alt ikke gav mening med det samme, har det hjulpet mig til at forstå de grundlæggende principper, jeg skal bruge i fremtidige projekter.</p>
+          <h3>HVAD TAGER JED MED MIG?</h3>
+          <ul style="list-style-type: none" class="liste_om">
+            <li><i class="fa-regular fa-lightbulb"></i>Jeg fik en grundforståelse for billedbehandling og billedformater.</li>
+
+            <li><i class="fa-regular fa-lightbulb"></i>En logisk filnavngivning gør kodningsprocessen væsentligt mere let og overskueligt. En god læring i at planlægge og organisere mit materiale bedre.</li>
+
+            <li><i class="fa-regular fa-lightbulb"></i>Jeg lærte at implementere fonte i min kode via bl.a. GoogleFonts</li>
+          </ul>
         </div>
         <div class="border_cta">
           <a href="https://www.ahcreative.dk/kea/02_web/01_website/website/index.html" class="CTA">MIN FÆRDIGE LØSNING</a>

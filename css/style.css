@@ -47,7 +47,7 @@ p {
 }
 
 main {
-  padding: 20px;
+  padding: 30px;
 }
 /* FORSIDE */
 .h2_forside {
@@ -62,7 +62,7 @@ main {
 .h3_om {
   font-size: 30px;
   color: #333333;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* MOBILE SITE */
