@@ -66,10 +66,17 @@ nav {
 footer {
   padding: 1rem 1rem;
   border-top: 1px solid#11468c;
-  text-align: center;
+  /* text-align: center; */
   font-family: "Raleway", serif;
-  color: rgb(51, 49, 49);
+  color: #333333;
   font-weight: lighter;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_ikoner a {
+  text-decoration: none;
 }
 /* BURGER-MENU */
 .burger {
@@ -165,9 +172,25 @@ footer {
     color: #e0e0e0;
     text-align: justify;
   }
+  .tekst_om {
+    color: #e0e0e0;
+  }
   /* TEMA 4 */
   .spil_prototype {
     text-align: center;
+  }
+
+  .passion_video {
+    display: grid;
+
+    background-color: #e0e0e0;
+
+    place-items: center;
+    color: #333333;
+    padding: 2rem;
+  }
+  .passion_tekst {
+    margin-right: 1.5rem;
   }
 }
 
@@ -219,7 +242,7 @@ footer {
     border-style: inherit;
   }
 
-  .om_1 {
+  .om_img {
     display: flex;
     align-items: flex-start; /* Sørg for, at alt flugter */
     gap: 20px; /* Giver lidt afstand mellem elementerne */
@@ -231,28 +254,19 @@ footer {
     text-align: right;
     color: #e0e0e0;
   }
-  .om_grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 2fr;
-    background-color: #11468c;
-    padding: 2rem;
-    border: solid 1px rgb(51, 49, 49);
-  }
+
   .container_om {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
   }
-  /* .indhold_om {
-    display: grid;
-    grid-template-columns: 1fr 
-  } */
+
   /* TEMA 2 */
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
   }
+
   .grid_1-1_t2 {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -271,11 +285,29 @@ footer {
     grid-template-columns: 1fr 1fr;
     background-color: #e0e0e0;
   }
+  .grid_1-1_t3 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    background-color: #e0e0e0;
+    padding: 1rem;
+  }
+  .grid_1-1-1 {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #11468c;
+  }
   .tekst_t3 {
     padding-top: 2rem;
     padding-left: 1rem;
     /* text-align: justify; */
   }
+  .container_styletiles {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    justify-content: center;
+  }
+
   /* TEMA 4 */
 
   .passion_video {
@@ -298,6 +330,25 @@ footer {
 }
 
 /* FØLGENDE GÆLDER BÅDE FOR DESKTOP OG MOBIL LIGEYGLDIG SKÆRMSTØRRELSE */
+/* Style ALLE direkte børn af .grid-container */
+.container_lottie > * {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.container_lottie {
+  display: grid;
+  place-items: center; /* Centrerer elementerne */
+}
+
+.container_lottie img {
+  z-index: 0; /* Baggrundslaget */
+}
+
+.container_lottie #lottie {
+  z-index: 1; /* Forgrundslaget */
+}
+
 .container {
   background-image: url(/billeder/baggrund3.webp);
   display: grid;
@@ -335,19 +386,33 @@ footer {
   text-align: center;
 }
 .divider_om {
-  padding: 20px;
+  /* padding: 10px; */
   text-align: center;
   font-family: "Raleway", serif;
-  color: rgb(51, 49, 49);
+  color: #333333;
   font-weight: lighter;
+  padding-top: 1rem;
+}
+.kontakt_baggrund {
+  background-color: #e0e0e0;
 }
 .tekst_kompetencer {
   display: grid;
   grid-template-columns: 1fr;
 }
-
+.container_om_blå {
+  background-color: #11468c;
+  padding: 2rem;
+}
+.kontakt {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.kontakt a {
+  text-decoration: none;
+}
 .mig_om {
-  /* background-color: #e0e0e0; */
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -355,10 +420,14 @@ footer {
   font-size: 20px;
   padding: 20px;
 }
+
 #myImage {
   cursor: pointer; /* Vis håndcursor for at indikere, at billedet kan klikkes */
 }
-
+.h4_om {
+  color: #e0e0e0;
+  font-weight: lighter;
+}
 div.scroll-container {
   background-color: #e0e0e0;
   overflow-x: auto; /* Horisontal scroll aktiveret */
@@ -380,7 +449,7 @@ div.scroll-container-t3 {
   overflow-x: auto; /* Horisontal scroll aktiveret */
   display: flex; /* Vis billederne i en horisontal række */
   gap: 10px; /* Afstand mellem billeder */
-  padding: 10px;
+  /* padding: 10px; */
   /* margin-top: 2rem; */
 }
 div.scroll-container img {
@@ -392,22 +461,56 @@ div.scroll-container img {
   font-weight: 300;
   font-size: 18px;
   line-height: 2rem;
-  padding-left: 2rem;
+  /* padding-left: 2rem; */
 }
-.grid_1-1-1 {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid #11468c;
+.liste_om li {
+  font-family: "Lato", serif;
+  font-weight: 350;
 }
+.liste_oplysninger {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 2rem;
+}
+
+.liste_kompetencer li {
+  margin-bottom: 2rem; /* Giver luft mellem punkterne */
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #e0e0e0;
+}
+.liste_kompetencer p {
+  margin: 5px 0 0; /* Giver lidt luft mellem teksten og datoen */
+  font-size: 18px; /* Eksempel på mindre skriftstørrelse */
+  color: black; /* Eksempel på en grå tekstfarve */
+}
+.liste_uddannelse li {
+  margin-bottom: 2rem; /* Giver luft mellem punkterne */
+}
+.liste_uddannelse p {
+  margin: 5px 0 0; /* Giver lidt luft mellem teksten og datoen */
+  font-size: 15px; /* Eksempel på mindre skriftstørrelse */
+  color: #666; /* Eksempel på en grå tekstfarve */
+}
+figcaption {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #555; /* Grå tekstfarve for at fremhæve billedet mere */
+  font-family: "Lato", serif;
+}
+
 .løsning_t5 {
   text-align: center;
 }
 .video {
   padding-top: 2rem;
 }
+
 /* CTA-KNAPPER  */
 .CTA {
-  /* display: inline-block;  */
   background-color: #e0e0e0;
   border: solid 0.5px #11468c;
   padding: 20px 20px; /* Giver knappen indre afstand */
@@ -417,6 +520,7 @@ div.scroll-container img {
   text-align: center;
   margin-top: 10px;
   display: inline-block;
+  font-family: "Raleway", serif;
 }
 .CTA_t5 {
   background-color: #11468c;
@@ -428,6 +532,7 @@ div.scroll-container img {
   text-align: center;
   margin-top: 10px;
   display: inline-block;
+  font-family: "Raleway", serif;
 }
 .CTA_t5:hover {
   background-color: #e0e0e0; /* Ændrer farven på baggrunden ved hover */

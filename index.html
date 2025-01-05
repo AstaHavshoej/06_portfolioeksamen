@@ -6,6 +6,8 @@
     <title>Forside</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/layout.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
     <link
       rel="icon"
       type="image/svg+xml"
@@ -27,9 +29,9 @@
   <body>
     <section class="hero"></section>
     <header>
-      <div class="logo">
+      <div class="logo_nyt">
         <a href="/">
-          <img src="billeder/logo.svg" alt="logo" />
+          <img src="billeder/logo_3.svg" alt="logo" />
         </a>
       </div>
       <nav>
@@ -50,10 +52,13 @@
     </header>
     <main>
       <section class="container">
-        <div class="lottie-animation"></div>
         <h1 class="h1_forside">PORTFOLIO</h1>
         <p>ASTA HAVSHØJ</p>
-        <img src="billeder/profilbillede.webp" alt="dette er et billede af mig" />
+        <div class="container_lottie">
+          <img src="billeder/profilbillede.webp" alt="dette er et billede af mig" />
+          <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+          <dotlottie-player id="lottie" src="https://lottie.host/504c156c-d404-423c-b224-9f5210fc2342/5qwAQWGGvT.lottie" background="transparent" speed="1" style="width: 100px; height: 100px" loop autoplay></dotlottie-player>
+        </div>
       </section>
       <section class="container_tekst">
         <h2 class="h2_forside">VELKOMMEN</h2>
@@ -93,10 +98,18 @@
       </section>
     </main>
     <footer>
-      TAK FORDI DU KIGGEDE MED
-      <div class="instagram-logo">
-        <a href="https://www.instagram.com/"> <img src="billeder/instagram-logo.svg" alt="Logo" /> </a>
+      <div class="footer_ikoner">
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">
+          <i class="fa-regular fa-envelope fa-xl" style="color: #333; padding-right: 15px"></i>
+        </a>
+        <a href="https://www.instagram.com/asta_havshoej/" target="_blank">
+          <i class="fa-brands fa-instagram fa-xl" style="color: #333; padding-right: 15px"></i>
+        </a>
+        <a href="  https://www.linkedin.com/in/asta-havsh%C3%B8j-348829263/" target="_blank">
+          <i class="fa-brands fa-linkedin fa-xl" style="color: #333"></i>
+        </a>
       </div>
+      <div>TAK FORDI DU KIGGEDE MED</div>
     </footer>
     <script src="js/menu.js"></script>
   </body>
