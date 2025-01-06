@@ -11,8 +11,16 @@ video {
   height: auto;
   display: block;
 }
+
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.logo_nyt {
+  width: 50px;
+  height: 50px;
+}
 /*************** Menu ****************/
-/* HEADER */
 header {
   display: flex;
   max-width: 1675px;
@@ -20,7 +28,6 @@ header {
   padding: 1rem 2rem;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #d9d2cc; */
 }
 
 .logo img {
@@ -64,9 +71,8 @@ nav {
 }
 /* FOOTER */
 footer {
-  padding: 1rem 1rem;
+  padding: 20px 20px;
   border-top: 1px solid#11468c;
-  /* text-align: center; */
   font-family: "Raleway", serif;
   color: #333333;
   font-weight: lighter;
@@ -138,40 +144,39 @@ footer {
 
 /* MOBILE SITE */
 @media (max-width: 800px) {
+  main {
+    padding: 20px 20px; /* Mindre luft på siderne for små skærme */
+  }
   .container_tekst {
     text-align: center;
     color: #e0e0e0;
-    padding-bottom: 2rem;
-    margin-top: 1rem;
+    padding-bottom: 15px;
+    margin-top: 15px;
     background-color: #11468c;
   }
   .grid_1-1 {
-    /* padding: 15px; */
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
     border: #0d355d 2px;
   }
-
-  .border_cta {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    text-decoration: none;
-    text-align: center;
+  .grid_1-1-grå {
+    display: grid;
+    background-color: #e0e0e0;
+    padding: 15px;
   }
+
   .grid_1-1_t2 {
     display: grid;
-    background-color: #11468c;
-    padding: 1.5rem;
+    background-color: #e0e0e0;
+    padding: 20px;
   }
   .tekst_t2 {
     font-size: 18px;
-    /* margin-top: 2rem; */
-    /* margin-right: 5rem; */
-    margin-bottom: 1rem;
-    color: #e0e0e0;
-    text-align: justify;
+    margin-bottom: 15px;
+    color: #333333;
   }
+
   .tekst_om {
     color: #e0e0e0;
   }
@@ -180,17 +185,9 @@ footer {
     text-align: center;
   }
 
-  .passion_video {
-    display: grid;
-
-    background-color: #e0e0e0;
-
-    place-items: center;
-    color: #333333;
-    padding: 2rem;
-  }
-  .passion_tekst {
-    margin-right: 1.5rem;
+  .temabeskrivelse {
+    background-color: #11468c;
+    color: #e0e0e0;
   }
 }
 
@@ -200,13 +197,11 @@ footer {
   .container_tekst {
     text-align: center;
     color: #333333;
-    padding-bottom: 2rem;
   }
 
   .container_oversigt {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 2rem;
   }
   .img_oversigt {
     border: 2px solid #11468c;
@@ -216,30 +211,14 @@ footer {
     width: 33.3%; /* Angiv den ønskede bredde */
     margin: 0 auto; /* Centrerer linjen */
     border: 1px solid #11468c; /* Hvis der ikke allerede er en border */
-    margin-bottom: 1rem;
-  }
-
-  .hr_t3 {
-    margin: 0; /* Centrerer linjen */
-    border: 1px solid #11468c; /* Hvis der ikke allerede er en border */
-    width: 20%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .hr_t5 {
     margin: 0; /* Centrerer linjen */
     border: 1px solid #11468c; /* Hvis der ikke allerede er en border */
-    width: 30%;
+    width: 25%;
     margin-bottom: 10px;
-  }
-
-  /* OM MIG */
-  .vertical-divider {
-    width: 1px; /* Tykkelsen på stregen */
-    height: 100%; /* Højden på stregen (kan justeres efter behov) */
-    background-color: #e0e0e0; /* Farven på stregen */
-    margin-left: 4em;
-    border-style: inherit;
   }
 
   .om_img {
@@ -260,24 +239,42 @@ footer {
     grid-template-columns: 1.5fr 2fr;
   }
 
-  /* TEMA 2 */
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
   }
+  .grid_1-1-video {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    background-color: #e0e0e0;
+    padding: 20px;
+    column-gap: 20px;
+  }
 
   .grid_1-1_t2 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background-color: #11468c;
-    padding: 1rem;
+    background-color: #e0e0e0;
+    padding: 10px;
+  }
+  .grid_1-1-grå {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  .grid_1-1-grå > div:last-child {
+    display: flex; /* Brug flexbox til at centrere knappen i sin kolonne */
+    justify-content: center; /* Centrerer horisontalt */
+    align-items: center; /* Centrerer vertikalt (hvis nødvendigt) */
   }
   .tekst_t2 {
     font-size: 18px;
-    margin-right: 5rem;
-    color: #e0e0e0;
-    text-align: justify;
+    margin-right: 30px;
+    color: #333333;
     place-self: center;
   }
   .container_scroll {
@@ -285,52 +282,25 @@ footer {
     grid-template-columns: 1fr 1fr;
     background-color: #e0e0e0;
   }
-  .grid_1-1_t3 {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    background-color: #e0e0e0;
-    padding: 1rem;
-  }
+
   .grid_1-1-1 {
     display: flex;
     flex-direction: row;
-    border: 1px solid #11468c;
   }
-  .tekst_t3 {
-    padding-top: 2rem;
-    padding-left: 1rem;
-    /* text-align: justify; */
-  }
+
   .container_styletiles {
     display: flex;
-    gap: 1rem;
-    margin: 1rem;
+    gap: 15px;
+    margin: 20px;
     justify-content: center;
-  }
-
-  /* TEMA 4 */
-
-  .passion_video {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #e0e0e0;
-    /* margin-bottom: 1.5rem; */
-    place-items: center;
-    color: #333333;
-    padding: 2rem;
-  }
-  .passion_tekst {
-    margin-right: 1.5rem;
   }
 
   .spil_prototype {
     text-align: center;
-    margin-right: 10rem;
   }
 }
 
 /* FØLGENDE GÆLDER BÅDE FOR DESKTOP OG MOBIL LIGEYGLDIG SKÆRMSTØRRELSE */
-/* Style ALLE direkte børn af .grid-container */
 .container_lottie > * {
   grid-column: 1;
   grid-row: 1;
@@ -386,12 +356,11 @@ footer {
   text-align: center;
 }
 .divider_om {
-  /* padding: 10px; */
   text-align: center;
   font-family: "Raleway", serif;
   color: #333333;
   font-weight: lighter;
-  padding-top: 1rem;
+  padding-top: 10px;
 }
 .kontakt_baggrund {
   background-color: #e0e0e0;
@@ -402,19 +371,19 @@ footer {
 }
 .container_om_blå {
   background-color: #11468c;
-  padding: 2rem;
+  padding: 20px;
 }
 .kontakt {
   text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .kontakt a {
   text-decoration: none;
 }
 .mig_om {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .tekst {
   font-size: 20px;
@@ -433,35 +402,25 @@ div.scroll-container {
   overflow-x: auto; /* Horisontal scroll aktiveret */
   display: flex; /* Vis billederne i en horisontal række */
   gap: 10px; /* Afstand mellem billeder */
-  padding: 10px;
-  margin-top: 2rem;
 }
 div.scroll-container img {
   padding: 10px;
+}
+.container_cta {
+  display: flex;
+  flex-direction: column; /* Sørger for, at børnene er stablet vertikalt */
+  align-items: center; /* Centrerer børnene horisontalt */
 }
 
 .img_kode_t2 {
   border: #11468c solid 1px;
-  /* margin-left: 3rem; */
-}
-div.scroll-container-t3 {
-  /* background-color: #e0e0e0; */
-  overflow-x: auto; /* Horisontal scroll aktiveret */
-  display: flex; /* Vis billederne i en horisontal række */
-  gap: 10px; /* Afstand mellem billeder */
-  /* padding: 10px; */
-  /* margin-top: 2rem; */
-}
-div.scroll-container img {
-  padding: 10px;
 }
 
 .liste_om {
   font-family: "Lato", serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 2rem;
-  /* padding-left: 2rem; */
+  line-height: 30px;
 }
 .liste_om li {
   font-family: "Lato", serif;
@@ -471,11 +430,11 @@ div.scroll-container img {
   font-family: "Lato", serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 2rem;
+  line-height: 30px;
 }
 
 .liste_kompetencer li {
-  margin-bottom: 2rem; /* Giver luft mellem punkterne */
+  margin-bottom: 25px; /* Giver luft mellem punkterne */
   font-family: "Lato", serif;
   font-weight: 300;
   font-size: 18px;
@@ -487,7 +446,7 @@ div.scroll-container img {
   color: black; /* Eksempel på en grå tekstfarve */
 }
 .liste_uddannelse li {
-  margin-bottom: 2rem; /* Giver luft mellem punkterne */
+  margin-bottom: 20px; /* Giver luft mellem punkterne */
 }
 .liste_uddannelse p {
   margin: 5px 0 0; /* Giver lidt luft mellem teksten og datoen */
@@ -495,33 +454,13 @@ div.scroll-container img {
   color: #666; /* Eksempel på en grå tekstfarve */
 }
 figcaption {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
   color: #555; /* Grå tekstfarve for at fremhæve billedet mere */
   font-family: "Lato", serif;
 }
 
-.løsning_t5 {
-  text-align: center;
-}
-.video {
-  padding-top: 2rem;
-}
-
-/* CTA-KNAPPER  */
-.CTA {
-  background-color: #e0e0e0;
-  border: solid 0.5px #11468c;
-  padding: 20px 20px; /* Giver knappen indre afstand */
-  color: #11468c; /* Tekstfarve */
-  text-decoration: none; /* Fjerner understregning */
-  font-size: 16px; /* Størrelsen på teksten */
-  text-align: center;
-  margin-top: 10px;
-  display: inline-block;
-  font-family: "Raleway", serif;
-}
 .CTA_t5 {
   background-color: #11468c;
   border: solid 0.5px #11468c;
@@ -538,16 +477,6 @@ figcaption {
   background-color: #e0e0e0; /* Ændrer farven på baggrunden ved hover */
   color: #11468c; /* Ændrer tekstfarven ved hover */
   transition: 0.3s; /* Tilføjer en glidende effekt */
-}
-.CTA:hover {
-  background-color: #11468c; /* Ændrer farven på baggrunden ved hover */
-  color: #e0e0e0; /* Ændrer tekstfarven ved hover */
-  transition: 0.3s; /* Tilføjer en glidende effekt */
-}
-
-.border_cta {
-  text-decoration: none;
-  text-align: center;
 }
 
 /* TEKST DIVIDER  */

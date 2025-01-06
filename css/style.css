@@ -42,20 +42,11 @@ p {
   font-family: "Lato", serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 1.5em;
-  /* margin-right: 1.5rem; */
+  line-height: 30px;
 }
 
-main {
-  padding: 30px;
-}
-.logo_nyt {
-  width: 50px;
-  height: 50px;
-}
 /* FORSIDE */
 .h2_forside {
-  /* color: #d9d2cc; */
   color: #333333;
   text-align: center;
 }
@@ -66,8 +57,6 @@ main {
 .h3_om {
   font-size: 30px;
   color: #e0e0e0;
-  /* text-align: center; */
-  /* margin-top: 3rem; */
 }
 
 /* MOBILE SITE */
@@ -84,7 +73,6 @@ main {
     font-size: 75px;
   }
   .h2_forside {
-    /* color: #d9d2cc; */
     color: #e0e0e0;
     text-align: center;
   }

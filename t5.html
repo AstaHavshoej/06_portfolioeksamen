@@ -2,6 +2,7 @@
 <html lang="da">
   <head>
     <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tema 5</title>
     <link rel="stylesheet" href="css/style.css" />
@@ -41,7 +42,6 @@
     </header>
     <main>
       <h1>GRUNDLÆGGENDE INDHOLD</h1>
-      <!-- <div class="divider"></div> -->
       <section class="temabeskrivelse">
         <h2 class="tema_h2">TEMA 5</h2>
         <p class="tekst">
@@ -57,64 +57,65 @@
       <section>
         <h2>PROCES</h2>
         <div class="divider"></div>
-
         <p>Tema 5 var opdelt i to forskellige projekter:</p>
         <br />
         <ul style="list-style-type: none" class="liste_om">
-          <li>Passionsvideo: Udarbejdelse af en 60-sekunders video om en person med en passion. Denne video skulle implementeres på et et passionssite vi selv skulle designe og kode</li>
-          <li>Redesign af hjemmeside: En gruppeopgave, hvor vi redesignede en eksisterende hjemmeside (Eisen Carwash). Fokus var at optimere hjemmesiden på baggrund af bl.a. analyser og brugertests. Denne opgave lavede vi i grupper, hvor vi via GitHub kunnne kode i den samme fil</li>
+          <li><strong>Passionsvideo:</strong> Udarbejdelse af en 60-sekunders video om en person med en passion. Denne video skulle implementeres på et et passionssite vi selv skulle designe og kode</li>
+          <li><strong>Redesign af hjemmeside:</strong> En gruppeopgave, hvor vi redesignede en eksisterende hjemmeside (Eisen Carwash). Fokus var at optimere hjemmesiden på baggrund af bl.a. analyser og brugertests. Denne opgave lavede vi i grupper, hvor vi via GitHub kunnne kode i den samme fil.Vi skulle præsentere vores redesignede hjemmeside, udfra præsentationsteknikken Pecha Cucha. Denne præsentationsform inkluderer 20 slides, der hver vises i præcis 20 sekunder (6 minutter og 40 sekunder i alt)</li>
         </ul>
-
-        <br />
         <h3>PASSIONSVIDEO - THEAS AKVARELVERDEN</h3>
         <hr / class="hr_t5">
+        <p>Vi arbejdede i par om at producere en 60-sekunders video inspireret af ”One Minute Wonder”-formatet. Vi interviewede Thea, en engageret kvinde med en stærk passion for akvarelmaling, hvor vi dykkede ned i hendes kreative proces og inspirationer. Under optagelserne samarbejdede min makker og jeg tæt for at fange autentiske og stemningsfulde øjeblikke. Vi redigerede vores videoer individuelt for at tilpasse dem til vores egne fortolkninger. En af de største udfordringer i denne proces, var den stramme tidsramme, hvor vi hurtigt skulle finde en person at interviewe, planlægge optagelserne, og efterfølgende klippe videoen færdig. Denne begrænsning tvang os til at tænke hurtigt og effektivt, hvilket resulterede i en mere fokuseret og målrettet arbejdsproces.</p>
+        <figcaption>Billeder fra vores optagedag til passionsvideoen</figcaption>
 
-        <!-- måske ændre denne div til en section? -->
-        <div class="container_passion">
-          <div class="passion_video">
-            <p class="passion_tekst">
-              Vi arbejdede i par og producerede en 60-sekunders video inspireret af ”One Minute Wonder”-formatet. Jeg interviewede Thea, en kvinde med passion for akvarelmaling. Min makker og jeg optog materialet sammen, men redigerede vores videoer individuelt. Vi skulle implementere den færdige video på vores Passionssite på to forskellige måder: via video-tagget i HTML og via YouTubes embed-metode, hvor videon lægges op på YouTube. Begge implementeringsmetoder gjorde det muligt at se videon dirrekte inde på sitet.
-              <br />
-              Se min færdige passions-video her, som er implementeret via HTML video-tagget.
-            </p>
-            <video controls src="film.mp4" poster="thumbnail.webp" class="video">Video med HTML</video>
-            <div></div>
+        <div class="grid_1-1-1">
+          <div>
+            <img src="billeder/passion_1.webp" />
+          </div>
+
+          <div>
+            <img src="billeder/passion_2.webp" />
+          </div>
+          <div>
+            <img src="billeder/passion_3.webp" />
           </div>
         </div>
+        <h3>VIDEOREDIGERING I AFTER EFFECTS</h3>
+        <hr / class="hr_t5">
+        <div class="grid_1-1-video">
+          <p>
+            I min redigeringsproces, i After Effects, fokuserede jeg på at skabe en narrativ rytme ved hjælp af b-roll-klip og en præcis udvælgelse af nøglemomenter. Jeg arbejdede desuden med Adobe Audio for at forbedre lydkvaliteten og manipulere lyden, så den understøttede fortællingen optimalt. Efter at have modtaget feedback blev jeg opmærksom på, hvordan mine brug af jumpcuts havde en væsentlig effekt på videoens samlede flow. Dette gav mig værdifuld indsigt i, hvordan redigeringsteknikker kan påvirke modtagerens oplevelse, og hvordan jeg kan arbejde med mere flydende overgange fremover. Den færdige video blev implementeret på vores passionssite på to forskellige måder: via HTML's native video-tag og ved at integrere videoen med YouTubes embed-funktion. Denne dobbelte tilgang gjorde
+            det muligt at udforske de tekniske forskelle og fordele ved de to metoder, hvor HTML-videoen gav os direkte kontrol over videoafspilningen på sitet. Hvis du vil se min færdige passionsvideo, kan du opleve den implementeret via HTML’s video-tag her.
+          </p>
+          <video controls src="film.mp4" poster="thumbnail.webp" class="video">Video med HTML</video>
+        </div>
 
-        <div class="container_passion">
-          <h3>REDESIGN AF "EISEN CARWASH"</h3>
-          <hr / class="hr_t5">
-
-          <div class="redesign">
-            <p>Vores gruppe valgte at redesigne ”Eisen Carwash”, hvis virksomhed udbyder rengøring af biler, både indvendigt og udvendigt. Vi brugte Figma til ideudvikling, herunder udformingen af moodboards, Style Tiles, wireframes og prototyper.Brugertests såsom Likert-skala, 5-sekunders test og Lighthouse-test blev en essentiel del af arbejdsprocessen. Disse tests gav os et solidt grundlag og udgangspunkt for ændringer – både i forhold til indhold og design.</p>
-            <div class="border_cta">
-              <a href="
-              <div class="border_cta">
-                <a href="https://www.figma.com/design/U03KfZYyHUT9kTcDltxBBk/Virksomhedssite?node-id=0-1&p=f&t=Jerpw3sjfG6exr1l-0" class="CTA_t5">PROCES I FIGMA</a>
-              </div>
-              <br />
-              <p>GitHub blev essentielt i forhold til kodningen, da dette gjorde det muligt for os at kode i det samme projekt. Vi delte siderne, der skulle indgå på siden, ud mellen os - jeg fik ansvaret for at kode gallerisiden. Dette gav mig yderligere træning og færdigheder i billedebehandling og at få billeder til at fungere i et galleri, både til mobil og desktop. Jeg konverterede bl.a. billederne til WepP format, da dette gav bedre resultater i Light House Testen. Jeg brugte display: grid, for at placere billederne korrekt i forhold til hinanden. Derudover anvendte jeg media Queries for at gøre galleriet responsivt. Nedenfor ses gallerisiden på deres oprindelige hjemmeside, galleriet på vores redesignede hjemmeside og et udsnit af hvordan jeg lavede koden</p>
-              <br />
-              <div class="grid_1-1-1">
-                <div>
-                  <!-- <h3>Galleri for oprindelig hjemmeside</h3> -->
-                  <img src="billeder/galleri2-t5.webp" />
-                </div>
-                <div>
-                  <!-- <h3>Galleri for redesignede hjemmeside</h3> -->
-                  <img src="billeder/galleri-t5.webp" />
-                </div>
-                <div>
-                  <!-- <h3>udsnit af kode for redesign</h3> -->
-                  <img src="billeder/kode-t5.webp" />
-                </div>
-              </div>
-              <p><br />Som aflsutning på dette tema, var vi gruppevis oppe og præsentere vores redesignede hjemmeside, hvor vi fremlagde udfra præsentationsteknikken Pecha Cucha. Denne præsentationsform inkluderer 20 slides, der hver vises i præcis 20 sekunder (6 minutter og 40 sekunder i alt). <br /></p>
-            </div>
+        <h3>REDESIGN AF "EISEN CARWASH"</h3>
+        <hr / class="hr_t5">
+        <div class="container_cta">
+          <p>Vores gruppe valgte at redesigne ”Eisen Carwash”, hvis virksomhed udbyder rengøring af biler, både indvendigt og udvendigt. Vi brugte Figma til ideudvikling, herunder udformingen af moodboards, Style Tiles, wireframes og prototyper.Brugertests såsom Likert-skala, 5-sekunders test og Lighthouse-test blev en essentiel del af arbejdsprocessen. Disse tests gav os et solidt grundlag og udgangspunkt for ændringer – både i forhold til indhold og design.Udforsk hele min idéudvikling og designproces, inklusiv skitser, designovervejelser og færdige spilelementer, i mit Figmaprojekt</p>
+          <div>
+            <a href="https://www.figma.com/design/U03KfZYyHUT9kTcDltxBBk/Virksomhedssite?node-id=0-1&p=f&t=Jerpw3sjfG6exr1l-0" class="CTA_t5">PROCES I FIGMA</a>
           </div>
         </div>
-        <!-- <div class="divider"></div> -->
+        <h3>KODE I GITHUB</h3>
+        <hr / class="hr_t5">
+        <p>GitHub blev essentielt i forhold til kodningen, da dette gjorde det muligt for os at kode i det samme projekt. Vi delte siderne, der skulle indgå på siden, ud mellen os - jeg fik ansvaret for at kode gallerisiden. Dette gav mig yderligere træning og færdigheder i billedebehandling og at få billeder til at fungere i et galleri, både til mobil og desktop. Jeg konverterede bl.a. billederne til WepP format, da dette gav bedre resultater i Light House Testen. Jeg brugte display: grid, for at placere billederne korrekt i forhold til hinanden. Derudover anvendte jeg media Queries for at gøre galleriet responsivt. Nedenfor ses gallerisiden på deres oprindelige hjemmeside, galleriet på vores redesignede hjemmeside og et udsnit af hvordan jeg lavede koden</p>
+        <br />
+        <div class="grid_1-1-1">
+          <div>
+            <img src="billeder/galleri2-t5.webp" />
+            <figcaption>Galleri for oprindelig hjemmeside</figcaption>
+          </div>
+          <div>
+            <img src="billeder/galleri-t5.webp" />
+            <figcaption>Galleri for redesignede hjemmeside</figcaption>
+          </div>
+          <div>
+            <img src="billeder/kode-t5.webp" />
+            <figcaption>udsnit af kode for redesign</figcaption>
+          </div>
+        </div>
 
         <h3>ANIMERET VEKTORGRAFIK - LOTTIE FILES</h3>
         <hr / class="hr_t5">
@@ -124,38 +125,25 @@
         <h2>LØSNING OG LÆRING</h2>
         <div class="divider"></div>
 
-        <div class="grid_1-1">
+        <div class="grid_1-1-grå">
           <div>
-            <!-- <h3>HVAD TAGER JEG MED MIG?</h3> -->
-
-            <p>Tema 5 gav mig både tekniske færdigheder og en forståelse for:</p>
+            <h3>HVAD TAGER JEG MED MIG?</h3>
             <ul style="list-style-type: none" class="liste_om">
               <li><i class="fa-regular fa-lightbulb"></i>Hvordan man skaber engagerende og målrettet videoindhold</li>
-
               <li><i class="fa-regular fa-lightbulb"></i> Optimering af brugeroplevelser gennem brugertests og iterative processer.</li>
               <li><i class="fa-regular fa-lightbulb"></i> Skabe bæredygtig vektorgrafik i form af Lottie Files ved brug af After Effects samt at implementere dem på et website</li>
               <li><i class="fa-regular fa-lightbulb"></i> Træning i præsentationsteknik i form af Pecha Kucha. Den stramme tidsramme tvang os til at være præcis og vælge det vigtigste indhold, hvilket trænede vores evne til at prioritere og strukturere vores budskaber.</li>
               <li><i class="fa-regular fa-lightbulb"></i> Teamsamarbejde og kommunikation i en kodningskontekst vha. værktøjer som Figma, GitHub og Trello</li>
             </ul>
           </div>
-
-          <div class="løsning_t5">
-            <div class="grid_1-1">
-              <div>
-                <!-- <div class="border_cta"> -->
-                <a href="https://www.ahcreative.dk/kea/05_indhold/passionssite/" class="CTA">MIN ENDELIGE LØSNING: <br />PASSIONSSITE</a>
-                <!-- </div> -->
-              </div>
-
-              <div>
-                <!-- <div class="border_cta"> -->
-                <a href="https://www.ahcreative.dk/kea/05_indhold/virksomhedssite/" class="CTA">MIN ENDELIGE LØSNING: <br />VIRKSOMHEDSSITE</a>
-                <!-- </div> -->
-              </div>
+          <div>
+            <div>
+              <a href="https://www.ahcreative.dk/kea/05_indhold/virksomhedssite/" class="CTA_t5">MIN ENDELIGE LØSNING: <br />VIRKSOMHEDSSITE</a>
+            </div>
+            <div>
+              <a href="https://www.ahcreative.dk/kea/05_indhold/passionssite/" class="CTA_t5">MIN ENDELIGE LØSNING: <br />PASSIONSSITE</a>
             </div>
           </div>
-
-          <div></div>
         </div>
       </section>
     </main>
