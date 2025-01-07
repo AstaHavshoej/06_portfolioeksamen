@@ -337,7 +337,7 @@ footer {
 }
 
 .container {
-  background-image: url(/billeder/baggrund3.webp);
+  background-image: url(../billeder/baggrund3.webp);
   display: grid;
   justify-items: center;
   align-items: center;
