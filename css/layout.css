@@ -146,7 +146,6 @@ footer {
 /* denne maxwidth dækker iphone og andre mindre skærme */
 @media (max-width: 414px) {
   .tema_h2 {
-    /* writing-mode: sideways-rl;  */
     font-size: 30px;
     color: #e0e0e0;
     text-align: center;
@@ -240,7 +239,7 @@ footer {
     border: 2px solid #11468c;
   }
   .tema_h2 {
-    writing-mode: sideways-rl; /* Gør teksten lodret (top til bund) */
+    writing-mode: vertical-rl; /* Gør teksten lodret (top til bund) */
     font-size: 50px;
     color: #e0e0e0;
     text-align: center;
