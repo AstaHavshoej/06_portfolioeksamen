@@ -46,6 +46,10 @@ p {
 }
 
 /* FORSIDE */
+.p_tema {
+  font-size: 18px;
+  padding: 20px;
+}
 .h2_forside {
   color: #333333;
   text-align: center;
