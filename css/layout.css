@@ -143,6 +143,22 @@ footer {
 }
 
 /* MOBILE SITE */
+/* denne maxwidth dækker iphone og andre mindre skærme */
+@media (max-width: 414px) {
+  .tema_h2 {
+    /* writing-mode: sideways-rl;  */
+    font-size: 30px;
+    color: #e0e0e0;
+    text-align: center;
+  }
+  .container_tekst {
+    text-align: center;
+    color: #e0e0e0;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #11468c;
+  }
+}
 @media (max-width: 800px) {
   main {
     padding: 20px 20px; /* Mindre luft på siderne for små skærme */
@@ -153,6 +169,12 @@ footer {
     padding: 15px;
     margin-top: 15px;
     background-color: #11468c;
+  }
+  .tema_h2 {
+    /* writing-mode: sideways-rl; */
+    font-size: 30px;
+    color: #e0e0e0;
+    text-align: center;
   }
   .grid_1-1 {
     display: grid;
@@ -185,6 +207,7 @@ footer {
 
   .tekst_om {
     color: #e0e0e0;
+    font-size: 50px;
   }
   /* TEMA 4 */
   .spil_prototype {
@@ -215,7 +238,17 @@ footer {
   .img_oversigt {
     border: 2px solid #11468c;
   }
-
+  .tema_h2 {
+    writing-mode: sideways-rl; /* Gør teksten lodret (top til bund) */
+    font-size: 50px;
+    color: #e0e0e0;
+    text-align: center;
+  }
+  .temabeskrivelse {
+    display: flex;
+    background-color: #11468c;
+    color: #e0e0e0;
+  }
   hr {
     width: 33.3%; /* Angiv den ønskede bredde */
     margin: 0 auto; /* Centrerer linjen */
@@ -343,17 +376,7 @@ footer {
   align-items: center;
   border-bottom: solid 1px #11468c;
 }
-.temabeskrivelse {
-  display: flex;
-  background-color: #11468c;
-  color: #e0e0e0;
-}
-.tema_h2 {
-  writing-mode: sideways-rl; /* Gør teksten lodret (top til bund) */
-  font-size: 50px;
-  color: #e0e0e0;
-  text-align: center;
-}
+
 .tema2 {
   display: grid;
   place-items: center;
